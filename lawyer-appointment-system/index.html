@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>Attorney And Law</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- bootstrap css -->
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="images/fevicon.png" type="image/gif" />
+   <!-- font css -->
+   <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+</head>
+<style>
+   .navbar-nav a {
+      font-size: 18px;
+   }
+   .navbar-expand-lg img{
+      margin-top:-30px ;
+      margin-left: -20px;
+      height: 10rem;
+      width: 20rem;
+   }
+   .banner_section{
+      margin-top: -60px;
+   }
+   .about_text_main{
+      margin-top: -80px;
+   }
+   .about_text_main h1{
+      margin-bottom: -20px;
+      margin-top: 20px;
+   }
+   .map-container {
+            /* position: relative; */
+            width: 60%;
+            /* padding-bottom: 50%; */
+            /* height: 0; */
+            overflow: hidden;
+        }
+        .map-container iframe {
+            position: absolute;
+            margin-top: -80px;
+            margin-left: -60px;
+            height: 87vh;
+            width: 100vh;
+        }
+   .footer_logo img .social_icon ul .location_text ul{
+      padding-left: 100px;
+   }
+</style>
+<body>
+   <div class="header_section">
+      <div class="container-fluid">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html"><img src="images/law-logo-design_5496430-removebg-preview.png" ></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav mr-auto" style="margin-left: -45px;">
+                  <li class="nav-item active">
+                     <a class="nav-link" href="index.html">Home</a>
+                  </li>' <li class="nav-item">
+                     <a class="nav-link" href="#services_section" style="color: white;">What we do</a>
+                  </li>'
+                  <li class="nav-item">
+                     <a class="nav-link" href="#about_section" style="color:white;">About</a>
+                  </li>
+                 
+                  <li class="nav-item">
+                     <a class="nav-link" href="#customer_section" style="color: white;">Testimonial</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#contact_section" style="color: white;">Contact Us</a>
+                  </li>
+               </ul>
+               <form class="form-inline my-2 my-lg-0">
+                  <div class="login_bt" style="width: 350px; display: flex; gap: 10px;">
+                     <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <span class="user_icon"><i class="fa fa-user" aria-hidden="true"></i></span> Login
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                           <a class="dropdown-item" href="admin/index.php">Admin</a>
+                           <a class="dropdown-item" href="clients/index.php">Clients</a>
+                           <a class="dropdown-item" href="lawyer/index.php">Lawyer</a>
+                        </div>
+                     </div>
+                     <div class="dropdown" style="display: inline-block;">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="signupDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="user_icon"><i class="fa fa-user" aria-hidden="true"></i></span> Sign Up
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="signupDropdown">
+                            <a class="dropdown-item" href="lawyer/control/signup.php?type=lawyer">Lawyer</a>
+                            <a class="dropdown-item" href="clients/control/signup.php?type=client">Clients</a>
+                        </div>
+                    </div>
+                  </div>
+               </form>
+            </div>
+         </nav>
+      </div>
+      <!-- banner section start -->
+      <div class="banner_section layout_padding">
+         <div class="container-fluid">
+            <div id="banner_slider" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="row">
+                        <div class="col-md-6 ">
+                           <div class="banner_taital_main">
+                              <h1 class="banner_taital">We Provide Best Lawyers </h1>
+                              <p class="banner_text">The best lawyers are very knowledgeable and dedicated, using their
+                                 skills to effectively help their clients solve legal problems.</p>
+                              <div class="readmore_btn active"><a href="#">Read More</a></div>
+                              <div class="started_bt"><a href="#">Contact Us</a></div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="banner_img"><img src="images/banner-img.png"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="banner_taital_main">
+                              <h1 class="banner_taital">We Provide Best Lawyers </h1>
+                              <p class="banner_text">The best lawyers are very knowledgeable and dedicated, using their
+                                 skills to effectively help their clients solve legal problems.</p>
+                              <div class="readmore_btn active"><a href="#">Read More</a></div>
+                              <div class="started_bt"><a href="#">Contact Us</a></div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="banner_img"><img src="images/banner-img.png"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="banner_taital_main">
+                              <h1 class="banner_taital">We Provide Best Lawyers </h1>
+                              <p class="banner_text">The best lawyers are very knowledgeable and dedicated, using their
+                                 skills to effectively help their clients solve legal problems.</p>
+                              <div class="readmore_btn active"><a href="#">Read More</a></div>
+                              <div class="started_bt"><a href="#">Contact Us</a></div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="banner_img"><img src="images/banner-img.png"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a class="carousel-control-prev" href="#banner_slider" role="button" data-slide="prev">
+                  <i class="fa fa-arrow-left"></i>
+               </a>
+               <a class="carousel-control-next" href="#banner_slider" role="button" data-slide="next">
+                  <i class="fa fa-arrow-right"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+      <!-- banner section end -->
+   </div>
+   <!-- header section end -->
+   <!-- box section start -->
+   <div class="container">
+      <div class="box_section">
+         <div class="online_box">
+            <div class="online_box_left">
+               <div class="online_box_main">
+                  <div class="box_left">
+                     <div class="right_arrow" ><i class="fa fa-arrow-right"></i></div>
+                  </div>
+                  <div class="box_right">
+                     <p class="book_text" >Book At</p>
+                     <h4 class="appoinment_text">Appoinment</h4>
+                  </div>
+               </div>
+            </div>
+            <div class="online_box_left active">
+               <div class="online_box_main">
+                  <div class="box_left">
+                     <div class="right_arrow"><i class="fa fa-arrow-right"></i></div>
+                  </div>
+                  <div class="box_right">
+                     <p class="book_text active">Get Free</p>
+                     <h4 class="appoinment_text active"> Evalution</h4>
+                  </div>
+               </div>
+            </div>
+            <div class="online_box_left">
+               <div class="online_box_main">
+                  <div class="box_left">
+                     <div class="right_arrow"><i class="fa fa-arrow-right"></i></div>
+                  </div>
+                  <div class="box_right">
+                     <p class="book_text">Pay Invoice</p>
+                     <h4 class="appoinment_text">Online</h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- box section end -->
+   <!-- services section start -->
+   <div class="services_section" id="services_section">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-12">
+               <h1 class="studies_taital">SERVICE OFFERINGS</h1>
+            </div>
+         </div>
+      </div>
+      <div class="services_section_2">
+         <div id="main_slider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" style="padding-left: 100px;">
+               <div class="carousel-item active">
+                  <div class="container" >
+                     <div class="row">
+                        <div class="col-md-4">
+                           <div class="service_box">
+                              <div class="house_icon">
+                                 <img src="images/icon-1.png" class="image_1">
+                                 <img src="images/icon-4.png" class="image_2">
+                              </div>
+                              <h3 class="corporate_text">Corporate Law</h3>
+                              <p class="chunks_text">Corporate lawyers specialize in business law, helping companies
+                                 navigate legal complexities related to mergers, acquisitions, compliance, contracts,
+                                 and corporate governance </p>
+                              <div class="readmore_button"><a href="#">Read More</a></div>
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="service_box active">
+                              <div class="house_icon">
+                                 <img src="images/icon-5.png" class="image_1">
+                                 <img src="images/icon-5.png" class="image_2">
+                              </div>
+                              <h3 class="corporate_text">Employments Law</h3>
+                              <p class="chunks_text">An employment lawyer specializes in issues related to the
+                                 workplace. They handle cases involving employment discrimination, harassment, wage and
+                                 hour disputes, wrongful termination, and other employment-related matters. </p>
+                              <div class="readmore_button active"><a href="#">Read More</a></div>
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="service_box">
+                              <div class="house_icon">
+                                 <img src="images/icon-3.png" class="image_1">
+                                 <img src="images/icon-6.png" class="image_2">
+                              </div>
+                              <h3 class="corporate_text">International Law</h3>
+                              <p class="chunks_text">International law governs the legal relations between nations and
+                                 other international actors, such as international organizations and, in some contexts,
+                                 individuals. </p>
+                              <div class="readmore_button"><a href="#">Read More</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-4">
+                           <div class="service_box">
+                              <div class="house_icon">
+                                 <img src="images/icon-1.png" class="image_1">
+                                 <img src="images/icon-4.png" class="image_2">
+                              </div>
+                              <h3 class="corporate_text">Constitutional Law</h3>
+                              <p class="chunks_text">Constitutional lawyers interpret the Constitution, arguing cases related to fundamental rights, governance, and public interest litigations (PILs) in the Supreme Court and High Courts. </p>
+                              <div class="readmore_button"><a href="#">Read More</a></div>
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="service_box active">
+                              <div class="house_icon">
+                                 <img src="images/icon-5.png" class="image_1">
+                                 <img src="images/icon-5.png" class="image_2">
+                              </div>
+                              <h3 class="corporate_text">Criminal Law</h3>
+                              <p class="chunks_text">Criminal lawyers defend or prosecute individuals accused of crimes defined under the IPC. They analyze facts, draft charges, and represent clients in criminal trials and appeals. </p>
+                              <div class="readmore_button active"><a href="#">Read More</a></div>
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="service_box">
+                              <div class="house_icon">
+                                 <img src="images/icon-3.png" class="image_1">
+                                 <img src="images/icon-6.png" class="image_2">
+                              </div>
+                              <h3 class="corporate_text">Civil Law</h3>
+                              <p class="chunks_text">Civil lawyers use the CPC to manage civil litigation, including drafting pleadings, conducting discovery, and representing clients in civil trials. </p>
+                              <div class="readmore_button"><a href="#">Read More</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-4">
+                           <div class="service_box">
+                              <div class="house_icon">
+                                 <img src="images/icon-1.png" class="image_1">
+                                 <img src="images/icon-4.png" class="image_2">
+                              </div>
+                              <h3 class="corporate_text">Family Law</h3>
+                              <p class="chunks_text">Family lawyers handle marriage, divorce, maintenance, and child custody cases for Hindus, advising on legal rights and court procedures. </p>
+                              <div class="readmore_button"><a href="#">Read More</a></div>
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="service_box active">
+                              <div class="house_icon">
+                                 <img src="images/icon-5.png" class="image_1">
+                                 <img src="images/icon-5.png" class="image_2">
+                              </div>
+                              <h3 class="corporate_text">Human Rights Law</h3>
+                              <p class="chunks_text">Human rights lawyers advocate for the protection of human rights, representing clients in human rights commissions and courts. </p>
+                              <div class="readmore_button active"><a href="#">Read More</a></div>
+                           </div>
+                        </div>
+                        <div class="col-md-4">
+                           <div class="service_box">
+                              <div class="house_icon">
+                                 <img src="images/icon-3.png" class="image_1">
+                                 <img src="images/icon-6.png" class="image_2">
+                              </div>
+                              <h3 class="corporate_text">Environmental Law</h3>
+                              <p class="chunks_text">Environmental lawyers advise on compliance with environmental regulations, represent clients in environmental litigation, and handle cases related to pollution control.
+                              </p>
+                              <div class="readmore_button"><a href="#">Read More</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+               <i class="fa fa-arrow-left"></i>
+            </a>
+            <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+               <i class="fa fa-arrow-right"></i>
+            </a>
+         </div>
+      </div>
+   </div>
+   <!-- services section end -->
+   <!-- studies section start -->
+   <div class="studies_section layout_padding">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-12">
+               <h1 class="studies_taital">Recent Case Studies</h1>
+            </div>
+         </div>
+         <div class="studies_section_2">
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="hover01 column">
+                     <figure><img src="images/companies-act.jpg"></figure>
+                  </div>
+                  <div class="studies_box">
+                     <h3 class="introduction_text">Coompines Law</h3>
+                  </div>
+                  <div class="read_bt"><a href="https://en.wikipedia.org/wiki/Indian_company_law">Read More</a></div>
+               </div>
+               <div class="col-md-4">
+                  <div class="hover01 column">
+                     <figure><img src="images/labour.jpeg"></figure>
+                  </div>
+                  <div class="studies_box">
+                     <h3 class="introduction_text">Labour Law</h3>
+                  </div>
+                  <div class="read_bt active"><a href="https://en.wikipedia.org/wiki/Indian_labour_law">Read More</a></div>
+               </div>
+               <div class="col-md-4">
+                  <div class="hover01 column">
+                     <figure><img src="images/service-img3.png"></figure>
+                  </div>
+                  <div class="studies_box">
+                     <h3 class="introduction_text">Property Law</h3>
+                  </div>
+                  <div class="read_bt"><a href="https://en.wikipedia.org/wiki/Indian_labour_law">Read More</a></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- studies section end -->
+   <!-- about section start -->
+   <div class="about_section layout_padding" id="about_section">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6">
+               <div class="about_img"><img src="images/about-img.png"></div>
+            </div>
+            <div class="col-md-6">
+               <div class="about_text_main">
+                  <h1 class="about_taital">About Us</h1>
+                  <p class="about_text">Welcome to Attorney and Law your trusted partner in finding and booking the best legal assistance with ease and convenience.</p>
+                  <h1 class="about_taital">Our vision</h1>
+                  <p class="about_text">We envision a future where finding and booking legal assistance is as simple as a few clicks. Our goal is to continuously innovate and improve our platform to meet the evolving needs of our users, making legal services more accessible to all.</p>
+                  <h1 class="about_taital">Our Mission</h1>
+                  <p class="about_text">Our mission is to bridge the gap between clients and lawyers by providing a seamless, efficient, and user-friendly platform. We aim to simplify the process of booking legal appointments, making legal services more accessible and organized for everyone.</p>
+
+                  <div class="readmore_bt"><a href="#">Read More</a></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- about section end -->
+   <!-- testimonial section start -->
+   <div class="customer_section layout_padding" id="customer_section" >
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-12">
+               <h1 class="customer_taital">SATISFIED CLIENT Says</h1>
+            </div>
+         </div>
+      </div>
+      <div id="my_slider" class="carousel slide" data-ride="carousel">
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <div class="customer_section_2">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="box_main">
+                              <div class="customer_main">
+                                 <div class="customer_left">
+                                    <div class="customer_img"><img src="images/rakesh.jpg" style="height: 200px;width: 250px; margin: 30px;"></div>
+                                 </div>
+                                 <div class="customer_right">
+                                    <h3 class="customer_name">Rakesh Sharma <span class="quick_icon"><img
+                                             src="images/quick-icon.png"></span></h3>
+                                    <p class="enim_text">As a busy business owner, I often struggle to find time for legal consultations. This booking system has been a game-changer for me. The interface is intuitive, and the multilingual support is incredibly helpful. I was able to book an appointment with a top-notch lawyer in just a few clicks, and the automated reminders ensured I didn’t miss my appointment. Highly recommended!</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="customer_section_2">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="box_main">
+                              <div class="customer_main">
+                                 <div class="customer_left">
+                                    <div class="customer_img"><img src="images/priya.jpeg" style="margin: 30px;"></div>
+                                 </div>
+                                 <div class="customer_right">
+                                    <h3 class="customer_name">Priya Verma, Homemaker <span class="quick_icon"><img
+                                             src="images/quick-icon.png"></span></h3>
+                                    <p class="enim_text">Being able to book a lawyer’s appointment online has made my life so much easier. I appreciate the system's simplicity and the availability of multiple payment options, including UPI, which is my preferred mode of payment. The process was smooth, and I got prompt confirmations and reminders. It's great to see such user-friendly technology available to everyone.</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="customer_section_2">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="box_main">
+                              <div class="customer_main">
+                                 <div class="customer_left">
+                                    <div class="customer_img"><img src="images/customer1.png" style="height: 220px; margin-left: 50px;"></div>
+                                 </div>
+                                 <div class="customer_right">
+                                    <h3 class="customer_name">Rajesh Mehra, IT Professional <span class="quick_icon"><img
+                                             src="images/quick-icon.png" ></span></h3>
+                                    <p class="enim_text">Fantastic service! The real-time availability calendar helped me find a suitable slot without any hassle. The booking process was seamless, and I received immediate confirmation. The cultural sensitivity in communication was a nice touch, making the entire experience very pleasant. This is exactly what we need in today’s fast-paced world.</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
+            <i class="fa fa-arrow-left"></i>
+         </a>
+         <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
+            <i class="fa fa-arrow-right"></i>
+         </a>
+      </div>
+   </div>
+   <!-- testimonial section end -->
+   <!-- news section start -->
+   <div class="news_section layout_padding">
+      <div class="container">
+         <h1 class="news_taital">Recent News</h1>
+         <div class="news_section_2">
+            <div class="news_box">
+               <div id="custom_slider" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <div class="news_img"><img src="images/RTI-act.jpg"></div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="news_img"><img src="images/RTI-act.jpg"></div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="news_img"><img src="images/RTI-act.jpg"></div>
+                     </div>
+                  </div>
+                  <a class="carousel-control-next" href="https://maninfocom.nic.in/" role="button" data-slide="next">
+                     <i class="fa fa-arrow-right"></i>
+                  </a>
+               </div>
+               <h2 class="does_taital" style="margin-top: 80px;">About Manipur Information Commission</h2>
+               <p class="dummy_text">About RTI Act
+                  Right to Information Act 2005 mandate timely response to citizen requests for government information. This RTI portal attempts to provide a Gateway to the citizens for Quick search of information, web published by various departments in Government. </p>
+
+            </div>
+            <div class="readmore_bt" style="padding-bottom: 20px;"><a href="https://lawmin.gov.in/" style="margin-left: 450px; ">More News</a></div>
+         </div>
+      </div>
+   </div>
+   <!-- news section end -->
+   <!-- contact section start -->
+   <!-- <div class="contact_section layout_padding" id="contact_section">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-12">
+               <h1 class="contact_taital">Free Consulation</h1>
+            </div>
+         </div>
+         <div class="contact_section_2">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="mail_section map_form_container">
+                     <form action="">
+                        <input type="text" class="mail_text" placeholder="Name" name="Name">
+                        <input type="text" class="mail_text" placeholder="Phone Number" name="Phone Number">
+                        <input type="text" class="mail_text" placeholder="Your Email" name="Your Email">
+                        <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment"
+                           name="Massage"></textarea>
+                        <div class="send_bt active"><a href="#">Send Now</a></div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div> -->
+   <!-- contact section end -->
+   <!-- footer section start -->
+   <div class="footer_section layout_padding">
+      <div class="container">
+         <div class="row" >
+            <div class="col-md-12">
+               <!-- <h3>Our Location</h3> -->
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.8418791917466!2d73.81968111512286!3d20.0135963825561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddebab15555555%3A0xdb01367e9d5cf969!2sK.K.%20Wagh%20Institute%20Of%20Engineering%20Education%20%26%20Research!5e0!3m2!1sen!2sin!4v1623084921356!5m2!1sen!2sin" 
+                allowfullscreen="" 
+                loading="lazy"></iframe>
+        </div>
+               <div class="location_text" style="margin-top: -70px;margin-left: 15rem;">
+                  <ul>
+                     <li>
+                        <a href="https://www.google.co.in/maps/place/KKWIEER/@20.0135964,73.8196811,17z/data=!3m1!4b1!4m6!3m5!1s0x3bddebab15555555:0xdb01367e9d5cf969!8m2!3d20.0135914!4d73.8222614!16s%2Fm%2F027cspv?entry=ttu"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+                     </li>
+                     <li>
+                        <a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+                     </li>
+                     <li>
+                        <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="Reach_us" style="margin-left: 40rem; color: white;">
+                  <h2 style="color: white; margin-top: 10px;">Attorney And Law</h2>
+                  <li>K. K. Wagh Institute of Engineering Education & Research, Nashik</li>
+                  <li><Address>Address : Hirabai Haridas Vidyanagari, Mumbai Agra Road Amrutdham, Panchavati, Nashik, Maharashtra 422003 </Address></li>
+                  <!-- <li>Mobile No : 8007682776</li> -->
+               </div>
+            </div>
+            <div class="footer_logo" style="margin-left: 30rem;">
+               <a href="indexz.html">
+                  <img src="images/law-logo-design_5496430-removebg-preview.png" style="height:300px; width: 300px; margin: -100px;" >
+            </div>
+            <div class="social_icon" style="margin-left: 30rem; ">
+               <ul>
+                  <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+               </ul>
+               
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- footer section end -->
+   <!-- copyright section start -->
+
+
+   <!-- <div class="copyright_section" >
+      <div class="container" style="margin-left: 25rem;">
+         <p class="copyright_text">2020 All Rights Reserved. Design by <a href="https://html.design">Free Html
+               Templates</a></p>
+      </div>
+   </div> -->
+   <!-- copyright section end -->
+   <!-- Javascript files-->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/jquery-3.0.0.min.js"></script>
+   <script src="js/plugin.js"></script>
+   <!-- sidebar -->
+   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="js/custom.js"></script>
+   <!-- javascript -->
+</body>
+
+</html>
